@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagierangaben</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="frame">
+        <header class="orangeBC">
+            <h1>Passagierangaben</h1>
+            <a href="gepaeck.html" title="Zurück"><button class="zurueck"><span class="Lchevron">&#8249;</span>Zurück</button></a>
+        </header>
+        
+        
+        <main>
+
+            <img src="./img/Frame1.svg" alt="">
+            
+            <section class="section_passagiere">
+                <p>Bitte geben Sie Passagiernamen exakt so ein, wie sie auf dem Reisepass oder Lichtbildausweis des Passagiers angegeben sind.</p>
+                <h2 class="orangeC">Passagier 1: Erwachsener</h2>
+                <hr class="hr_form">
+
+                <form action="" method="post" id="" class="form">
+                    <div class="form_container">
+                    <div class="div1">
+                        <div>
+                            <label for="idanrede">Anrede</label>
+                            <select name="Anrede" id="idanrede">
+                                <option value="" disabled selected>Anrede</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Frau">Frau</option>
+                            </select>
+                            <hr class="hr_form">
+                        </div>
+                        <div>
+                            <label for="idvorname">Vorname</label>
+                            <input type="text" name="Vorname" id="idvorname" placeholder="Vorname">
+                            <hr class="hr_form">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <label for="idnachname">Nachname</label>
+                        <input type="text" name="Nachname" id="idnachname" placeholder="Nachname">
+                        <hr class="hr_form">
+                    </div>
+
+                    <div>
+                        <label for="idalter">Alter zum Zeitpunkt der Reise</label>
+                        <select name="Alter" id="idalter">
+                            <option value="" disabled selected>Alter</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18+">18+</option>
+                        </select>
+                        <hr class="hr_form">
+                    </div>
+                    </div>  
+                </form>
+            </section>
+
+            <img src="./img/background2.svg" alt="">
+
+            <section class="weiter zahlung">
+                    <a href="buchung_abschliessen.html">
+                        <button class="sansation nextsite">
+                            WEITER ZUR ZAHLUNG
+                            <span class="Rchevron">&#8250;</span>
+                        </button>
+                    </a>
+            </section>
+        </main>
+    </div>
+</main>
+</body>
+</html>

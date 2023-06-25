@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reise buchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="frame">
+        <header>
+            <h1>Reise Buchen</h1>
+            <a href="home.html" title="Home"><button class="zurueck"><span class="Lchevron">&#8249;</span>HOME</button></a>
+        </header>
+
+        <img src="./img/home_background.svg" alt="Hintergrundbild" id="backgroundimg" class="backgroundimg1">
+        <img src="./img/home_background.svg" alt="Hintergrundbild" id="backgroundimg" class="backgroundimg2">
+
+        <main>
+            <section class="buchungsformular">
+                <ul>
+                    <li><div class="whiteBC"><span>Rückflug</span></div></li>
+                    <li><div>Nur hinflug</div></li>
+                </ul>
+                <form action="" method="post" class="selectairport">
+                    <label for="idvon" class="selectairport">Von</label>
+                    <select name="von" id="idvon" class="selectairport">
+                        <option value="" disabled selected>Abflughafen auswählen</option>
+                        <option value="Wien">Wien</option>
+                        <option value="Budapest">Budapest</option>
+                        <option value="Salzburg">Salzburg</option>
+                        <option value="Prag">Prag</option>
+                        <option value="Ljubljana">Ljubljana</option>
+                        <option value="Graz">Graz</option>
+                        <option value="München">München</option>
+                        <option value="Bratislava">Bratislava</option>
+                        <option value="Berlin Brandenburg">Berlin Brandenburg</option>
+                        <option value="Klagenfurt">Klagenfurt</option>
+                        <option value="Innsbruck">Innsbruck</option>
+                    </select>
+                </form>
+                <hr>
+                <form action="" method="post" class="selectairport">
+                    <label for="idnach" class="selectairport">Nach</label>
+                    <select name="von" id="idnach" class="selectairport">
+                        <option value="" disabled selected>Oder Reiseziel zuerst auswählen</option>
+                        <option value="La Palma">La Palma</option>
+                        <option value="Lamezia Terme">Lamezia Terme</option>
+                        <option value="Lanzarote (Arrecife)">Lanzarote (Arrecife)</option>
+                        <option value="Lissabon">Lissabon</option>
+                        <option value="London (Alle Flufhägen)">London (Alle Flufhägen)</option>
+                        <option value="London Gatwick">London Gatwick</option>
+                        <option value="London Luton">London Luton</option>
+                        <option value="Lyon">Lyon</option>
+                        <option value="Madeira (Funchal)">Madeira (Funchal)</option>
+                        <option value="Mailand (Alle Flughäfen)">Mailand (Alle Flughäfen)</option>
+                        <option value="Mailand Linate">Mailand Malpensa</option>
+                        <option value="Mailand Malpensa">Mailand Linate</option>
+                    </select>
+                </form>
+                <hr>
+                <div class="date_passengers">
+                    <form action="" method="post" class="selectdate">
+                        <label for="idstart" class="selectdate">Abflug</label>
+                        <input type="text" name="start" id="idstart" placeholder="Auswählen" onfocus="(this.type='date')"  onblur="(this.type='text')" class="selectdate">
+                    </form>
+                    <div class="vl"></div> <!-- vertical line -->
+                    <form action="" method="post" class="selectdate">
+                        <label for="idend" class="selectdate">Rückflug</label>
+                        <input type="text" name="end" id="idend" placeholder="Auswählen" onfocus="(this.type='date')"  onblur="(this.type='text')" class="selectdate">
+                    </form>
+                    
+                    <!-- <form action="" method="get" class="selectdate"> -->
+                    <div>
+                        <label for="idadults" class="selectdate">Erwachsene</label>
+                        <div class="number-input">
+                            <button onclick="document.getElementById('idadults').stepDown();" class="stepdown">&#65293;</button>
+                            <input type="number" name="Erwachsene" id="idadults" min="1" value="1" >
+                            <button onclick="document.getElementById('idadults').stepUp();" class="stepup">&#65291;</button>
+                        </div>
+                    </div>
+                    <!-- </form> -->
+                    
+                    <!-- Kinder & kleinkinder disabled -->
+                    <div class="vl"></div> <!-- vertical line -->
+                    <div>
+                        <label for="idkinder" class="selectdate">Kinder & kleinkinder</label>
+                        <input type="text" name="Kinder & kleinkinder" id="idkinder" placeholder="Auswählen" disabled></div>
+                </div>
+                <a href="hinflug.html" title="Flüge anzeigen"><button class="sansation menubutton">FLÜGE ANZEIGEN</button></a>    
+            </section>
+        </main>
+    </div>
+</body>
+</html>

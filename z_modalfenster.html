@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE EINGEBEN!!</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="frame">
+        <header class="orangeBC">
+            <h1>Sportausrüstung</h1>
+            <a href="buchen.html" title="Abbrechen"><button class="abbrechen">Abbrechen</button></a>
+            <button class="fertig">Fertig</button>
+        </header>
+        
+        <img src="./img/Frame1.svg" alt="">
+
+        <section class="section_sportausruestung">
+            <div class="heading_submenu">
+                <h3>Sportausrüstung hinzufügen</h3>
+            </div>
+
+            <hr class="hr_submenu">
+
+            <div class="div1">
+                <p>Jeder Fluggast (ausschließlich Kleinkinder) ist berechtigt, 1 Stück Sportausrüstung mitzuführen</p>
+                <div>
+                    <span>Gesamtanzahl der Gepäckstücke</span>
+                    <span class="orangeC">0</span>
+                </div>
+                <hr>
+            </div>
+
+            <div class="box_preis">
+                <p>Zusätzlicher preis <span>0.00</span></p>
+            </div>
+
+            <div class="div2">
+                <span class="orangeC">Kleine gepäckstücke (20kg)</span>
+                <span>€84.00 pro</span>
+            </div>
+
+            <hr class="hr_submenu">
+
+            <div class="div3">
+                <div class="luggage_input">
+                    <label for="idski">
+                        <span class="span1">Ski und skischuhe</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idski').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idski" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idski').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+
+                <div class="luggage_input">
+                    <label for="idsnowboard">
+                        <span class="span1">Snowboard(s)</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idsnowboard').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idsnowboard" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idsnowboard').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+
+                <div class="luggage_input">
+                    <label for="idwaffen">
+                        <span class="span1">Sport-schusswaffen</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idwaffen').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idwaffen" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idwaffen').stepUp();" class="stepup">&#65291;</button>
+                </div>
+            </div>
+
+            <img src="./img/Frame1.svg" alt="">
+
+            <div class="div2">
+                <span class="orangeC">Große gepäckstücke (32kg)</span>
+                <span>€104.00 pro</span>
+            </div>
+
+            <hr class="hr_submenu">
+
+            <div class="div3">
+                <div class="luggage_input">
+                    <label for="idfahrräder">
+                        <span class="span1">Fahrräder</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idfahrräder').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idfahrräder" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idfahrräder').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+                
+                <div class="luggage_input">
+                    <label for="idkanu">
+                        <span class="span1">Kanu/kajak(s)</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idkanu').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idkanu" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idkanu').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+
+                <div class="luggage_input">
+                    <label for="idsurfboard">
+                        <span class="span1">Surfboard(s)</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idsurfboard').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idsurfboard" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idsurfboard').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+
+                <div class="luggage_input">
+                    <label for="idgleiter">
+                        <span class="span1">Hängegeleiter</span>
+                    </label>
+                    <div class="number-input">
+                        <button onclick="document.getElementById('idgleiter').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="idgleiter" min="0" max="1" value="0" >
+                        <button onclick="document.getElementById('idgleiter').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img src="./img/Frame3.svg" alt="">
+
+        <section class="weiter">
+            <div>
+                <button class="sansation nextsite">WEITER</button>
+            </div>
+        </section>
+
+        <img src="./img/Frame4.svg" alt="">
+    </div>
+</main>
+</body>
+</html>

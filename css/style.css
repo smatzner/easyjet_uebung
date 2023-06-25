@@ -1,0 +1,1329 @@
+/* ----- GLOBAL ----- */
+
+/* --- Reset --- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    max-width: 428px;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+/* Reset number inputs */
+input[type="number"] { 
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+/* Reset links */
+
+a{
+    text-decoration: none;
+}
+
+/* Reset img */
+img{
+    display: block;
+}
+
+/* --- iPhone Frame --- */
+.frame{
+    width: 428px;
+    height: 928px;
+    background-color: #FA5F21;
+    padding-top: 15px;
+    position: absolute;
+    overflow: scroll;
+}
+
+/* --- Fonts --- */
+@font-face {
+    font-family: 'Sansation Light';
+    src: url('../fonts/Sansation-Light.ttf') format('truetype');
+}
+
+.sansation{
+    font-family: 'Sansation Light';
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.inter{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* --- Icons --- */
+.Rchevron{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 4px;
+    right: -15px;
+}
+
+.Lchevron{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 4.5px;
+    left: -5px;
+}
+
+/* --- Buttons --- */
+
+button{
+    cursor: pointer;
+}
+
+.menubutton{
+    display: block;
+    border: none;
+    background-color: #FA5F21;
+    color: white;
+    width: 388px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.menubutton:hover{
+    opacity: 0.4;
+}
+
+.nextsite{
+    display: block;
+    border: none;
+    background-color: #FA5F21;
+    color: white;
+    width: 428px;
+    height: 63px;
+    margin: 0 auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nextsite:hover{
+    opacity: 0.4;
+}
+
+/* --- Colors --- */
+
+.orangeBC{
+    background-color: #FA5F21;
+    color: white;
+}
+
+.orangeC{
+    color: #FA5F21;
+    background-color: white;
+}
+
+.blackC{
+    color: black;
+}
+
+/* --- Headers --- */
+
+header{
+    width: 428px;
+    height: 95px;
+    background-color: #FA5F21;
+}
+
+header h1{
+    font-size: 21px;
+    position: relative;
+    top: 58px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+
+header p{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+header path{
+    fill: white;
+}
+
+.zurueck{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    background-color: #FA5F21;
+    color: white;
+    border: none;
+    font-family: 'Sansation Light';
+    text-transform: uppercase;
+}
+
+.abbrechen{
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    background-color: #FA5F21;
+    color: white;
+    border: none;
+    font-family: 'Sansation Light';
+    text-transform: uppercase;
+}
+
+.fertig{
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    background-color: #FA5F21;
+    color: white;
+    border: none;
+    font-family: 'Sansation Light';
+    text-transform: uppercase;
+}
+
+header a:hover{
+    opacity: 0.5;
+}
+
+/* --- Backround Image --- */
+
+#backgroundimg{
+    display: block;
+}
+
+/* --- Grey Background */
+
+.greyBC{
+    display: block;
+    background-color: rgb(224, 224, 224);
+    width: 428px;
+    height: 818px;
+}
+
+.hr_form{
+    border: none;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+/* ---------- HOME ---------- */
+
+/* --- Header home --- */
+
+#home ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+}
+
+#helpbutton{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 17.5px 5px;
+}
+
+.easyJet{
+    font-family: 'cooper-black-std';
+    font-size: 35px;
+    position: relative;
+    top: 0px;
+}
+
+#menubutton{
+    border: none;
+    font-size: 30px;
+    margin: 5px 7.5px;
+}
+
+
+/* --- Section COVID --- */
+
+.covidinfo{
+    font-family: 'Inter', sans-serif;
+    height: 175px;
+    width: 404px;
+    position: absolute;
+    top: 124px;
+    left: 12px;
+    cursor: pointer;
+}
+
+#orangebox{
+    height: 87.5px;
+}
+
+.covidinfo ul{
+    list-style: none;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    display: flex;
+
+}
+
+#infobutton{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 23px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+}
+
+.covidinfo h1{
+    position: relative;
+    font-size: 17px;
+    left: 40px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.covidinfo h2{
+    position: relative;
+    font-size: 17px;
+    left: 40px;
+    font-weight:100;
+}
+
+#whitebox{
+    background-color: white; 
+    height: 87.5px;
+    color: black;
+}
+
+#whitebox h3{
+    font-size: 19px;
+    padding: 5px;
+}
+
+#wohlbefinden{
+    font-size: 9px;
+    color: #C4C4C4;
+    padding: 0px 5px;
+}
+
+#mehrerfahren{
+    border: none;
+    background-color: white;
+    font-size: 17px;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+
+/* --- Section Services --- */
+
+
+.services td{
+    background-color: white;
+    color: black;
+    font-size: 21px;
+    width: 200px;
+    position: relative;
+}
+
+.services table{
+    margin: 0 auto;
+    border-spacing: 10px;
+}
+
+.services p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.firstrow{
+    height: 104px;
+}
+
+.secondrow{
+    height: 67px;
+}
+
+.thirdrow{
+    height: 37px;
+}
+
+.thirdrow p{
+    position: relative;
+    top: 0px;
+}
+
+.services a{
+    display: block;
+    width: 200px;
+    height: 104px;
+    color: black;
+}
+
+.services a:hover{
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+
+/* ---------- REISE BUCHEN ---------- */
+
+/* --- Buchungsformular --- */
+
+.backgroundimg2{
+    display: block;
+    position:absolute;
+    bottom: 0px;
+}
+
+.buchungsformular{
+    width: 428px;
+    height: 424px;
+    background-color: white;
+    position: absolute;
+    top: 124px;
+    display: block;
+}
+
+.buchungsformular ul{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(220, 220, 220);
+    width: 390px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 7px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.buchungsformular ul li{
+    font-family: 'Sansation Light';
+}
+
+.whiteBC{
+    background-color: white;
+    height: 30px;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -53px;
+    border-radius: 7px;
+}
+
+form.selectairport{
+    margin: 10px 10px 5px;
+}
+
+.buchungsformular hr{
+    border: 1px solid rgb(229, 229, 229);
+    margin: 0 5px;
+}
+
+.buchungsformular label{
+    color: #FA5F21;
+    margin-left: 10px;
+}
+
+select.selectairport{
+    display: block;
+    width: 95%;
+    font-size: 20px;
+    border: none;
+    margin: 5px auto 0;
+    padding: 5px 0 15px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    color: rgb(117,117,117);
+}
+
+.date_passengers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+}
+
+form.selectdate{ /* ggf rausnehmen und mit .selectairport zusammenführen */
+    width: 200px;
+}
+
+.vl{
+    border-left: 2px solid rgb(229,229,229);
+    height: 90%;
+}
+
+input.selectdate{
+    border: none;
+    margin: 10px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.number-input button{
+    font-size: 20px;
+    background-color: transparent;
+    color: #FA5F21;
+    border: 2px solid #FA5F21;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+
+.date_passengers div.number-input{
+    width: 100px;
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    left: 80px;
+}
+
+.number-input input{
+    text-align: center;
+    font-size: 22px;
+    width: 30px;
+    border: none;
+}
+
+#idkinder{
+    border: none;
+    margin: 10px 10px;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+/* ---------- Hinflug & Rückflug ---------- */
+
+/* --- Header --- */
+.flightselection h1{
+    transform: translateY(-20px);
+}
+
+
+/* Flightselection Banner */
+.flightselection_banner{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow: hidden;
+    justify-content: center;
+}
+.flightselection_banner div{
+    width: 106px;
+    height: 62px;
+    border: 0.8px solid rgb(204, 204, 204);
+    text-align: center;
+    padding: 5px;
+}
+
+.flightselection_banner h6{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.flightselection_banner p{
+    font-size: 9px;
+    font-weight: 200;
+}
+
+/* Flighselection Box */
+.flightselection_box{
+    width: 408px;
+    height: 273px;
+    background-color: white;
+    margin: 11px auto 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.flightselection_box .div1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.flightselection_box [class*='time']{
+    font-size: 18px;
+}
+
+.flightselection_box .time1{
+    text-align: left;
+}
+
+.flightselection_box .time2{
+    text-align: right;
+}
+
+.flightselection_box h2{
+    color: #FA5F21;
+    font-size: 24px;
+}
+
+.flightselection_box .div1 span{
+    font-size: 15px;
+    color: black;
+}
+
+.flightselection_box p{
+    font-size: 10px;
+    color: rgb(101, 101, 101);
+}
+
+.flightselection_box .airplane{
+    font-size: 12px;
+    word-spacing: 2px;
+}
+
+.flightselection_box .airplane svg{
+    position: relative;
+    top: 6px;
+}
+
+.airplane path{
+    fill: #FA5F21;
+}
+
+.flightselection_box .flightno{
+    text-align: center;
+    display: block;
+    margin: 6px;
+    font-size: 15px;
+}
+
+.flightselection_box .div2{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    justify-content: space-between;
+    top: 90px;
+}
+
+.flightselection_box .div2 h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.flightselection_box .div2 svg{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+
+.flightselection_box .div2 p{
+    display: inline-block;
+    font-size: 10px;
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.flightselection_box button{
+    background-color: #FA5F21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 73px;
+}
+
+.flightselection_box .div2 span{
+    font-size: 20px;
+}
+
+.flightselection_box a{
+    display: block;
+}
+
+.flightselection_box button:hover{
+    background-color: rgb(117,63,30);
+}
+
+/* Info Fees */
+.info_fees div{
+    width: 428px;
+    height: 64px;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    top: 829px;
+    box-shadow: -8px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+}
+
+.info_fees p{
+    font-size: 12.5px;
+    margin: 0 auto;
+}
+
+.info_fees span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* ---------- Gepäck ---------- */
+
+/* --- General --- */
+.heading_submenu{
+    width: 428px;
+    height: 50px;  
+    padding:0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.heading_submenu h3{
+    font-size: 25px;
+    font-weight: 200;
+    color: #FA5F21;
+}
+
+.hr_submenu{
+    border: none;
+    border-top: 1px solid rgb(229, 229, 229);
+    width: 428px;
+}
+
+.luggage_input{
+    width: 408px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 10px;
+    align-items: center;
+}   
+
+.box_preis{
+    background-color: rgb(231, 231, 231);
+    width: 428px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.box_preis span{
+    font-size: 24px;
+    color: #FA5F21;
+}
+
+/* --- Section Gepäck --- */
+
+.section_gepäck{
+    width: 428px;
+    height: 532px;
+    background-color: white;
+}
+/* Gepäck (i) */
+.section_gepäck svg{
+    background-color: #FA5F21;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.section_gepäck path{
+    fill: white;
+    
+}
+
+/* Hangepäck & Aufgabegepäck */
+.section_gepäck .div2{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.section_gepäck .div2 h3{
+    margin-left: 10px;
+}
+
+/* Handepäck Box */
+.section_gepäck .box1{
+    width: 408px;
+    height: 132px;
+    background-color: rgb(231, 231, 231);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.section_gepäck .box1 h5{
+    font-size: 14.5px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.section_gepäck .box1 p{
+    font-size: 13.5px;
+}
+
+.section_gepäck .box1 div{
+    display: flex;
+    justify-content: space-between;
+    color: #FA5F21;
+    align-items: center;
+    font-weight: 700;
+}
+
+.section_gepäck .Rchevron1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 200 !important;
+    position: relative;
+    bottom: 3px;
+}
+
+/* Infobox Aufgabegepäck */
+.section_gepäck .box2{
+    width: 408px;
+    height: 56px;
+    background-color: rgb(254,237,226);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.section_gepäck .box2 img{
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+.section_gepäck .box2 p{
+    font-size: 12px;
+    position: relative;
+    right: 10px;   
+}
+
+/* Luggage Input */
+
+.section_gepäck .luggage_input .span1{
+    color: #FA5F21;
+    font-size: 12px;
+
+}
+
+.section_gepäck .luggage_input .span2{
+    font-size: 10px;
+    color: rgb(185, 185, 185);
+    position: relative;
+    bottom: 5px;
+}
+
+/* --- Section Sportgeräte --- */
+.section_sportgeraete{
+    width: 428px;
+    background-color: white;
+}
+
+.section_sportgeraete .menubutton{
+    margin-top: 30px;
+}
+
+.section_sportgeraete .box_preis{
+    margin-top: 9px;
+}
+
+/* - Modalfenster Sportgeräte - */
+
+div#modal{
+    display: none;
+}
+
+div#modal-content{
+    position: absolute;
+    top:0px;
+}
+
+.section_sportausruestung{
+    width: 428px;
+    background-color: white;
+}
+
+.section_sportausruestung .div1{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.section_sportausruestung .div1 div{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.section_sportausruestung .div1 div span{
+    margin: 15px 0;
+}
+
+.section_sportausruestung .div1 hr{
+    border: 2.5px solid rgb(249,199,173);
+}
+
+.section_sportausruestung .div2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 17px 5px;
+}
+
+.section_sportausruestung .div3{
+    padding: 5px 0;
+}
+
+.section_sportausruestung .div2 span{
+    font-size: 18px;
+}
+
+.section_sportausruestung .span1{
+    font-size: 18px;
+}
+
+/* ---------- Passagierangaben ---------- */
+
+.section_passagiere{
+    width: 428px;
+    height: 335px;
+    background-color: white;
+    padding: 10px;
+}
+
+.section_passagiere h2{
+    color: #FA5F21;
+    margin: 10px 0px;
+}
+
+.section_passagiere .form_container{
+    height: 216px;
+    display: grid;
+    align-content: space-evenly;
+}
+
+.section_passagiere label,
+.section_passagiere select,
+.section_passagiere input{
+    display: block;
+    border: none;
+    font-size: 18px;
+    height: 20px;
+    margin-bottom: 5px
+}
+
+.section_passagiere label{
+    color: #FA5F21;
+}
+
+
+.section_passagiere select{
+    appearance: none;
+}
+
+.section_passagiere .div1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+#idanrede{
+    width: 62px;
+
+}
+
+#idvorname{
+    width: 320px;    
+}
+
+/* Weiter zur Zahlung */
+
+.zahlung{
+    padding-top: 9px;
+}
+
+.zahlung button{
+    width:428px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zahlung span{
+    position: unset;
+    transform: translateY(-5px);
+}
+
+/* ---------- Buchung abschließen ---------- */
+#sticky{
+    padding: 0;
+}
+
+#sticky header{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#sticky button{
+    top: 40px;
+}
+/* --- Section Hinflug --- */
+.section_flug{
+    width: 428px;
+    background-color: white;
+}
+
+.section_flug .heading_submenu{
+    height: 55px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_flug .heading_submenu span{
+    color: rgb(147, 147, 147);
+}
+
+.section_flug .div1{
+    padding: 20px 0px 5px 30px;
+}
+
+.section_flug .div11{
+    display: flex;
+}
+
+.section_flug .div11 .airplane{
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.section_flug .div111 span{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.section_flug .div111 .span1{
+    color: rgb(171, 171, 171);
+    font-size: 15px;
+}
+
+.section_flug .div111 .span2{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.section_flug .div111 .span3{
+    color: #FA5F21;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.section_flug .div2{
+    position: relative;
+    z-index: 1;
+    left: 85px;
+    width: 300px;
+}
+
+.section_flug .div21{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_flug .div211{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.section_flug .div212{
+    color: #FA5F21;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.section_flug .div3{
+    width: 375px;
+    height: 75px;
+    margin: 15px 0px 5px 53px;
+}
+
+.section_flug .div31{
+    color: #FA5F21;
+    margin-bottom: 10px;
+}
+
+.section_flug .div3 .hr_submenu{
+    width: 100%;
+}
+.section_flug .div32{
+    margin-top: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.section_flug .div322{
+    color: rgb(160, 160, 160);
+}
+
+.section_flug .div323{
+    color: #FA5F21;
+}
+
+/* --- Section Extras --- */
+.section_extras{
+    background-color: white;
+    width: 428px;
+}
+
+.section_extras ul li::before {
+    content: "\2022";
+    color: #FA5F21;
+}
+
+.section_extras .div1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    
+}
+
+.section_extras .div1{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section_extras .div2{
+    font-size:15px;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: 10px 10px;
+}
+
+/* --- Section CO2 ---  */
+
+.section_co2{
+    background-color: white;
+    width: 428px;
+    height: 180px
+}
+
+.section_co2 .div1{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.section_co2 button{
+    text-transform: none;
+    margin: 15px auto;
+}
+
+/* --- Section Zahlung --- */
+.section_zahlung{
+    background-color: white;
+    width: 428px;
+    height: 150px;
+}
+
+.heading_zahlung{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading_zahlung span{
+    color: #FA5F21;
+    font-size: 20px;
+}
+
+.section_zahlung button{
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_zahlung img{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* ---------- Zahlung ---------- */
+
+/* --- Background IMG --- */
+
+.img1{
+    position: absolute;
+    top: 438px;
+    width: 428px;
+    z-index: 0;
+
+}
+
+/* --- Section Bezahlen --- */
+.section_payment_methods{
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.section_payment_methods .heading_zahlung{
+    margin-bottom: 30px;
+}
+
+.section_payment_methods p{
+    margin: 20px 5px 10px;
+}
+
+#img_credit_cards{
+    margin: 5px;
+}
+
+/* - Zahlung Form - */
+
+.section_payment_methods .form_container{
+    height: 216px;
+    display: grid;
+    align-content: space-evenly;
+    padding: 5px;
+}
+
+.section_payment_methods label,
+.section_payment_methods select,
+.section_payment_methods input{
+    display: block;
+    border: none;
+    font-size: 18px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.section_payment_methods label{
+    color: #FA5F21;
+}
+
+.section_payment_methods select{
+    appearance: none;
+}
+
+.section_payment_methods .div1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_payment_methods .div11{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.section_payment_methods .div111{
+    display: flex;
+}
+
+/* --- Section Zahlung Infobox */
+.zahlung_infobox{
+    background-color: white;
+    width: 428px;
+    position: relative;
+    top: 16px;
+}
+
+.zahlung_infobox .div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.zahlung_infobox .div11{
+    margin-right: 10px;
+}
+
+.bezahlen button{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 200px
+}
+
+.bezahlen span{
+    position: unset;
+    transform: translateY(-5px);
+}
+
+
+/* ----------- Abgeschlossen ---------- */
+
+/* --- Background img --- */
+.img2{
+    position: absolute;
+    top: 288px;
+    z-index: 0;
+
+}
+
+/* --- Section abgeschlossen --- */
+.section_abgeschlossen{
+    background-color: white ;
+    width: 428px;
+    height: 170px;
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section_abgeschlossen .span1{
+    font-weight: 700;
+}
+
+/* --- Section zur Startseite --- */
+.backtostart button{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 500px
+}
+
+.backtostart span{
+    position: unset;
+    transform: translateY(-5px);
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gepäck hinzufügen</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="frame">
+        <header class="orangeBC">
+            <h1>Gepäck hinzufügen</h1>
+            <a href="rueckflug.html" title="Zurück"><button class="zurueck"><span class="Lchevron">&#8249;</span>Zurück</button></a>
+        </header>
+        
+        
+
+        <main>
+            <img src="./img/Frame1.svg" alt="">
+            
+            <section class="section_gepäck">
+
+                <div class="heading_submenu">
+                    <h3>Gepäck</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 512 512">
+                        <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>
+                    </svg>
+                </div>
+
+                <hr class="hr_submenu">
+
+                <div class="div2">
+                    <img src="./img/Vectorbackpack2.svg" alt="">
+                    <h3>Handgepäck</h3>
+                </div>
+
+                <div class="box1">
+                    <h5>Handgepäck</h5>
+                    <p>Alle Kunden könne <span>ein  kleines Gepäckstück (max. 45 x 36 x 20 cm)</span> kostenlos mit an Bord nehmen, das unter den Vordersitz passen muss.</p>
+                    <div>
+                        <h4>Weitere Informationen</h4>
+                        <div class="Rchevron1">&#8250;</div>   
+                    </div>
+                </div>
+
+                <div class="div2">
+                    <img src="./img/Vectoraufgabegepäck.svg" alt="">
+                    <h3>Aufgabegepäck</h3>
+                </div>
+
+                <div class="box2">
+                    <div><img src="./img/exclamation.svg" alt=""></div>
+                    <div><p>Die Preise für Aufgabegepäck können sich ändern. <br> Füge deines jetzt hinzu!</p></div>
+                </div>
+
+                <div class="luggage_input">
+                    <label for="id15kg">
+                        <span class="span1">15kg aufgabegepäckstück</span>
+                        <br>
+                        <span class="span2">€29.74 pro gepäckstück, pro flug</span>
+                    </label>
+                        
+                    <div class="number-input">
+                        <button onclick="document.getElementById('id15kg').stepDown();" class="stepdown">&#65293;</button>
+                        <input type="number" name="Erwachsene" id="id15kg" min="0" value="1" >
+                        <button onclick="document.getElementById('id15kg').stepUp();" class="stepup">&#65291;</button>
+                    </div>
+                </div>
+
+                <div class="luggage_input">
+                        <label for="id23kg">
+                            <span class="span1">23kg aufgabegepäckstück</span>
+                            <br>
+                            <span class="span2">€35.49 pro gepäckstück, pro flug</span>
+                        </label>
+                        
+                        <div class="number-input">
+                            <button onclick="document.getElementById('id23kg').stepDown();" class="stepdown">&#65293;</button>
+                            <input type="number" name="Erwachsene" id="id23kg" min="0" value="0" >
+                            <button onclick="document.getElementById('id23kg').stepUp();" class="stepup">&#65291;</button>
+                        </div>
+                </div>
+
+                <div class="box_preis">
+                    <!-- Preisanpassung disabled -->
+                    <p>Zusätzlicher preis <span>€59.48</span></p>
+                </div>
+            </section>
+
+            <img src="./img/Frame2.svg" alt="">
+
+            <section class="section_sportgeraete">
+                <div class="heading_submenu">
+                    <h3>Sportgeräte</h3>
+                </div>
+
+                <hr class="hr_submenu">
+
+                <button id="open" class="sansation menubutton" onclick="showmodal()">SPORTAUSRÜSTUNG HINZUFÜGEN</button>
+
+                <!-- Modalfenster Sportgeräte -->
+
+                <div id="modal">
+                    <div id="modal-content">
+                        <div class="frame">
+                            <header class="orangeBC">
+                                <h1>Sportausrüstung</h1>
+                                <button class="abbrechen" title="Abbrechen" onclick="hidemodal()">Abbrechen</button>
+                                <button class="fertig" title="Fertig" onclick="hidemodal()">Fertig</button>
+                            </header>
+                            
+                            <img src="./img/Frame1.svg" alt="">
+                    
+                            <section class="section_sportausruestung">
+                                <div class="heading_submenu">
+                                    <h3>Sportausrüstung hinzufügen</h3>
+                                </div>
+                    
+                                <hr class="hr_submenu">
+                    
+                                <div class="div1">
+                                    <p>Jeder Fluggast (ausschließlich Kleinkinder) ist berechtigt, 1 Stück Sportausrüstung mitzuführen</p>
+                                    <div>
+                                        <span>Gesamtanzahl der Gepäckstücke</span>
+                                        <span class="orangeC">0</span>
+                                    </div>
+                                    <hr>
+                                </div>
+                    
+                                <div class="box_preis">
+                                    <p>Zusätzlicher preis <span>0.00</span></p>
+                                </div>
+                    
+                                <div class="div2">
+                                    <span class="orangeC">Kleine gepäckstücke (20kg)</span>
+                                    <span>€84.00 pro</span>
+                                </div>
+                    
+                                <hr class="hr_submenu">
+                    
+                                <div class="div3">
+                                    <div class="luggage_input">
+                                        <label for="idski">
+                                            <span class="span1">Ski und skischuhe</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idski').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idski" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idski').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="luggage_input">
+                                        <label for="idsnowboard">
+                                            <span class="span1">Snowboard(s)</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idsnowboard').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idsnowboard" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idsnowboard').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="luggage_input">
+                                        <label for="idwaffen">
+                                            <span class="span1">Sport-schusswaffen</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idwaffen').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idwaffen" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idwaffen').stepUp();" class="stepup">&#65291;</button>
+                                    </div>
+                                </div>
+                    
+                                <img src="./img/Frame1.svg" alt="">
+                    
+                                <div class="div2">
+                                    <span class="orangeC">Große gepäckstücke (32kg)</span>
+                                    <span>€104.00 pro</span>
+                                </div>
+                    
+                                <hr class="hr_submenu">
+                    
+                                <div class="div3">
+                                    <div class="luggage_input">
+                                        <label for="idfahrräder">
+                                            <span class="span1">Fahrräder</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idfahrräder').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idfahrräder" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idfahrräder').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="luggage_input">
+                                        <label for="idkanu">
+                                            <span class="span1">Kanu/kajak(s)</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idkanu').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idkanu" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idkanu').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="luggage_input">
+                                        <label for="idsurfboard">
+                                            <span class="span1">Surfboard(s)</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idsurfboard').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idsurfboard" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idsurfboard').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="luggage_input">
+                                        <label for="idgleiter">
+                                            <span class="span1">Hängegeleiter</span>
+                                        </label>
+                                        <div class="number-input">
+                                            <button onclick="document.getElementById('idgleiter').stepDown();" class="stepdown">&#65293;</button>
+                                            <input type="number" name="Erwachsene" id="idgleiter" min="0" max="1" value="0" >
+                                            <button onclick="document.getElementById('idgleiter').stepUp();" class="stepup">&#65291;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                            <img src="./img/Frame3.svg" alt="">
+                    
+                            <section class="weiter">
+                                <div>
+                                    <button class="sansation nextsite" title="Weiter" onclick="hidemodal()">WEITER</button>
+                                </div>
+                            </section>
+                    
+                            <img src="./img/Frame4.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    function showmodal(){
+                        document.getElementById("modal").style.display = "block";
+                    }
+
+                    function hidemodal(){
+                        document.getElementById("modal").style.display = "none";
+                    }
+
+                </script>
+                
+                <div class="box_preis">
+                    <p>Zusätzlicher preis <span>€0.00</span></p>
+                </div>
+            </section>
+
+            <section class="weiter">
+                <div>
+                    <a href="passagierangaben.html"><button class="sansation nextsite">WEITER</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+</main>
+</body>
+</html>

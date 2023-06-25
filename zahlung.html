@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="frame">
+        <header class="orangeBC">
+            <h1>Zahlung</h1>
+            <a href="buchung_abschliessen.html" title="Zurück"><button class="zurueck"><span class="Lchevron">&#8249;</span>Zurück</button></a>
+        </header>
+
+        <main>
+
+            <img src="./img/Frame1.svg" alt="">
+
+            <img src="./img/background3.svg" alt="" class="img1">
+
+            <section class="section_payment_methods">
+                <div class="heading_submenu heading_zahlung">
+                    <div><h3>Zahlung</h3></div>
+                    <div>Endpreis <span>€265.25</span></div>
+                </div>
+
+                <hr class="hr_submenu">
+
+                <p>Die folgenden Karten werden akzeptiert</p>
+
+                <img src="./img/credit_card2.svg" alt="" id="img_credit_cards">
+
+                <form action="" method="post">
+                    <div class="form_container">
+                        <div>
+                            <label for="idkartennummer">Kartennummer</label>
+                            <input type="number" name="Kartennummer" id="idkartennummer" placeholder="Kartennummer">
+                            <hr class="hr_form">
+                        </div>
+
+                        <div>
+                            <label for="idname_karte">Name auf der Karte</label>
+                            <input type="text" name="Name auf der Karte" id="idname_karte" placeholder="Name auf der Karte">
+                            <hr class="hr_form">
+                        </div>
+                        
+                        <div class="div1">
+                            <div class="div11">
+                                <label for="idgültigbis">Gültig bis</label>
+                                <div class="div111">
+                                    <select name="month" id="idgültigbis" title="Monat">
+                                        <option value="" disabled selected>MM</option>
+                                        <option value="01" >01</option>
+                                        <option value="02" >02</option>
+                                        <option value="03" >03</option>
+                                        <option value="04" >04</option>
+                                        <option value="05" >05</option>
+                                        <option value="06" >06</option>
+                                        <option value="07" >07</option>
+                                        <option value="08" >08</option>
+                                        <option value="09" >09</option>
+                                        <option value="10" >10</option>
+                                        <option value="11" >11</option>
+                                        <option value="12" >12</option>
+                                    </select>
+                                    <span>&ensp;/&ensp;</span>
+                                    <select name="year" id="idgültigbis" title="Jahr">
+                                        <option value="" disabled selected>JJ</option>
+                                        <option value="22" >22</option>
+                                        <option value="23" >23</option>
+                                        <option value="24" >24</option>
+                                        <option value="25" >25</option>
+                                        <option value="26" >26</option>
+                                        <option value="27" >27</option>
+                                        <option value="28" >28</option>
+                                        <option value="29" >29</option>
+                                        <option value="30" >30</option>
+                                    </select>
+                                </div> 
+                                <hr class="hr_form">
+                            </div>
+                            <div class="12">
+                                <label for="idcvv">Kartenprüfnummer</label>
+                                <input type="number" name="cvv" id="idcvv" title="Kartenprüfnummer" placeholder="Kartenprüfnummer"> 
+                                <hr class="hr_form">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </section>
+
+
+            <section class="zahlung_infobox">
+                <div class="div1">
+                    <div class="div11"><img src="./img/exclamation.svg" alt=""></div>
+                    <div class="div12">
+                        <p>Nachdem du auf “Jetzt bezahlen” gedrückt hast, wirst du möglicherweise von deiner Bank nach weiteren Angaben gefragt, um dich zu authentifizieren und deine Zahlung zu autorisieren</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="weiter bezahlen">
+                <a href="abgeschlossen.html">
+                    <button class="sansation nextsite">
+                        WEITER ZUR ZAHLUNG
+                        <span class="Rchevron">&#8250;</span>
+                    </button>
+                </a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
